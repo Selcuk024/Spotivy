@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Spotivy
+namespace Spotivy.Music
 {
-    internal class Playlist
+    internal class Album
     {
     }
 }
