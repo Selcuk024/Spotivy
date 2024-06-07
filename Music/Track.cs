@@ -14,6 +14,7 @@ namespace Spotivy.Music
         private int timeInSeconds;
 
         public int getTrackId()
+
         {
             return id;
         }

@@ -19,7 +19,7 @@ namespace Spotivy.Music
 
         public void play(List<Track> tracks)
         {
-            //play first track in queue
+            //play first track in queuee
         }
     }
 }
