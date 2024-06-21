@@ -19,7 +19,7 @@ namespace Spotivy.Music
         public Track(int TrackId, string trackName, string artist)
         {
             TrackId = id + 1;
-            name = trackName
+            name = trackName;
 
         }
         public string getTrackName()
