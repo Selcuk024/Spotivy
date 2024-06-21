@@ -8,18 +8,19 @@ namespace Spotivy.Music
 {
     internal class Playlist
     {
-        private string name;
-        private List<Track> tracks;
+        List<Track> tracks = new List<Track>();
+
+        //private string name;
         //moet een list van tracks zijn ipv string
 
-        public void addTrack(string track, List<Track> tracks)
-        {
+       // public void addTrack(string track, List<Track> tracks)
+      //  {
             //string moet een track worden
-        }
+      //  }
  
-        public void play(List<Track> tracks)
-        {
+      //  public void play(List<Track> tracks)
+      //  {
             //play first track in queuee
-        }
+      //  }
     }
 }

@@ -16,6 +16,7 @@ namespace Spotivy
         private int Id;
         private int Followers;
         private int Following;
+        private List<User> Users;
 
 
         //public List<Playlist> UserPlaylists = new List<Playlist>();
@@ -27,7 +28,13 @@ namespace Spotivy
             this.Id = amountOfUsers;
             this.amountOfUsers++;
 
-            Console.WriteLine(this.Username + " " + this.Id + " " + this.amountOfUsers);
+
+            Console.WriteLine(this.Username + " (" + this.Id + ") aangemaakt.");
+        }
+
+        public int getUserAmount()
+        {
+            return this.amountOfUsers;
         }
 
         //public void AddPlaylist(Playlist playlist)

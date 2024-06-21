@@ -8,23 +8,48 @@ namespace Spotivy.Music
 {
     internal class Track
     {
-        private int id;
-        private string name;
-        private string producer; 
-        private int timeInSeconds;
+        int id = 0;
+        string name;
+        string producer;
+        int timeInSeconds;
+        bool playing = false;
+        List<Track> tracks = new List<Track>();
 
-        public int getTrackId()
 
+        public Track(int TrackId, string trackName, string artist)
         {
-            return id;
+            TrackId = id + 1;
+            name = trackName
+
         }
-        public string getTrackName ()
+        public string getTrackName()
         {
             return name;
         }
-        public string getTrackProducer ()
+        public int getTrackId()
+        {
+            return id;
+        }
+
+        public string getTrackProducer()
         {
             return producer;
+        }
+        public bool PlaySong()
+        {
+            if (playing == false)
+            {
+                playing = true;
+            }
+            return playing;
+        }
+        public bool StopSong()
+        {
+            if (playing == true)
+            {
+                playing = false;
+            }
+            return playing;
         }
         public int getTrackTimeInSeconds()
         {
