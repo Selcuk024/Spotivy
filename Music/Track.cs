@@ -10,7 +10,7 @@ namespace Spotivy.Music
     {
         private int id;
         private string name;
-        private string producer;
+        private string producer; 
         private int timeInSeconds;
 
         public int getTrackId()

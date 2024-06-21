@@ -10,22 +10,31 @@ namespace Spotivy
 
     public class User
     {
-        public List<Playlist> Playlists { get; set; }
-
+        public int amountOfUsers = 0;
+        //private List<Playlist> Playlists;
         public string Username;
+        private int Id;
+        private int Followers;
+        private int Following;
 
-        Playlist playlist = new Playlist();
 
-        public List<Playlist> UserPlaylists = new List<Playlist>();
+        //public List<Playlist> UserPlaylists = new List<Playlist>();
         
 
-        public void AddPlaylist(Playlist playlist)
+        public void createUser(string username)
         {
-            Playlists.Add(playlist);
-            Console.WriteLine($"Playlist '{playlist.Name}' added to user '{Username}'.");
-        }
-        public void 
+            this.Username = username;
+            this.Id = amountOfUsers;
+            this.amountOfUsers++;
 
-    }
+            Console.WriteLine(this.Username + " " + this.Id + " " + this.amountOfUsers);
+        }
+
+        //public void AddPlaylist(Playlist playlist)
+        //{
+        //    Playlists.Add(playlist);
+        //    Console.WriteLine($"Playlist '{playlist.Name}' added to user '{Username}'.");
+        //}
+
     }
 }
