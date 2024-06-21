@@ -11,7 +11,7 @@ namespace Spotivy
             Console.WriteLine("Welcome to Spotivy!");
             Console.WriteLine(" ");
             Console.WriteLine("OPTIONS:");
-            Console.WriteLine("1: Create account");t
+            Console.WriteLine("1: Create account");
             Console.BackgroundColor = ConsoleColor.Black;
 
             //track tes
