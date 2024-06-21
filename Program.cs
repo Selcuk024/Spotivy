@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-﻿using System.Security.Cryptography.X509Certificates;
-=======
 ﻿using Spotivy.Music;
->>>>>>> 1c2d601fb8d1e35ea5dd087b69f4f47dafa4e12b
 
 namespace Spotivy
 {
@@ -10,16 +6,15 @@ namespace Spotivy
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
             //create account
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("Welcome to Spotivy!");
             Console.WriteLine(" ");
             Console.WriteLine("OPTIONS:");
-            Console.WriteLine("1: Create account");
+            Console.WriteLine("1: Create account");t
             Console.BackgroundColor = ConsoleColor.Black;
-=======
-            Console.WriteLine("Hello, World!");
+
+            //track tes
             Track track = new Track(1, "test", "test");
             List<Track> trackList = new List<Track>();
             
@@ -29,7 +24,6 @@ namespace Spotivy
             {
                 Console.WriteLine("song is playing");
             }
->>>>>>> 1c2d601fb8d1e35ea5dd087b69f4f47dafa4e12b
             User user = new User();
 
 
