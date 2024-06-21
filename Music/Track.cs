@@ -1,57 +1,68 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Spotivy.Music
 {
     internal class Track
     {
-        int id = 0;
-        string name;
-        string producer;
-        int timeInSeconds;
-        bool playing = false;
-        List<Track> tracks = new List<Track>();
+        private static int idCounter = 0;
+        private int id;
+        private string name;
+        private string producer;
+        private int timeInSeconds;
+        private bool playing;
+        private static List<Track> tracks = new List<Track>();
 
-
-        public Track(int TrackId, string trackName, string artist)
+        public Track(string trackName, string producerTrack, int timeInSecond)
         {
-            TrackId = id + 1;
+            id = ++idCounter; 
             name = trackName;
-
+            producer = producerTrack;
+            timeInSeconds = timeInSecond;
+            playing = false;
         }
-        public string getTrackName()
+
+        public static Track CreateTrack(string trackName, string producer, int timeInSeconds)
+        {
+            Track newTrack = new Track(trackName, producer, timeInSeconds);
+            tracks.Add(newTrack);
+            return newTrack;
+        }
+
+        public string GetTrackName()
         {
             return name;
         }
-        public int getTrackId()
+
+        public int GetTrackId()
         {
             return id;
         }
 
-        public string getTrackProducer()
+        public string GetTrackProducer()
         {
             return producer;
         }
+
         public bool PlaySong()
         {
-            if (playing == false)
+            if (!playing)
             {
                 playing = true;
             }
             return playing;
         }
+
         public bool StopSong()
         {
-            if (playing == true)
+            if (playing)
             {
                 playing = false;
             }
             return playing;
         }
-        public int getTrackTimeInSeconds()
+
+        public int GetTrackTimeInSeconds()
         {
             return timeInSeconds;
         }

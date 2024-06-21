@@ -11,19 +11,13 @@ namespace Spotivy
             Console.WriteLine("Welcome to Spotivy!");
             Console.WriteLine(" ");
             Console.WriteLine("OPTIONS:");
-            Console.WriteLine("1: Create account");t
+            Console.WriteLine("1: Create account");
             Console.BackgroundColor = ConsoleColor.Black;
 
             //track tes
-            Track track = new Track(1, "test", "test");
-            List<Track> trackList = new List<Track>();
-            
-            bool playing = track.PlaySong();
-            string songName = track.getTrackName();
-            if (playing == true)
-            {
-                Console.WriteLine("song is playing");
-            }
+            Track track1 = Track.CreateTrack("Song A", "Producer X", 210);
+            Track track2 = Track.CreateTrack("Song B", "Producer Y", 180);
+
             User user = new User();
 
 
