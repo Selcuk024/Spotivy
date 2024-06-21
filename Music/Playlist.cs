@@ -16,10 +16,10 @@ namespace Spotivy.Music
         {
             //string moet een track worden
         }
-
+ 
         public void play(List<Track> tracks)
         {
-            //play first track in queue
+            //play first track in queuee
         }
     }
 }
