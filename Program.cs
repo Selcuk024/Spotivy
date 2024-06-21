@@ -1,10 +1,16 @@
-﻿namespace Spotivy
+﻿using Spotivy.Music;
+
+namespace Spotivy
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Track track = new Track();
+            track.PlaySong();
+            if (playing == true) {
+                Console.WriteLine("playing song");
+            }
         }
     }
 }

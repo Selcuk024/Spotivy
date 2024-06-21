@@ -15,6 +15,7 @@ namespace Spotivy.Music
         public void addTrack(string track, List<Track> tracks)
         {
             //string moet een track worden
+
         }
 
         public void play(List<Track> tracks)
