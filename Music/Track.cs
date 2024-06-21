@@ -15,11 +15,13 @@ namespace Spotivy.Music
         bool playing = false;
         List<Track> tracks = new List<Track>();
 
+        
+
 
         public Track(int TrackId, string trackName, string artist)
         {
             TrackId = id + 1;
-            name = trackName
+            name = trackName;
 
         }
         public string getTrackName()

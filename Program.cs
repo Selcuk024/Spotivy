@@ -11,10 +11,10 @@ namespace Spotivy
             Console.WriteLine("Welcome to Spotivy!");
             Console.WriteLine(" ");
             Console.WriteLine("OPTIONS:");
-            Console.WriteLine("1: Create account");t
+            Console.WriteLine("1: Create account");
             Console.BackgroundColor = ConsoleColor.Black;
 
-            //track tes
+            //track test
             Track track = new Track(1, "test", "test");
             List<Track> trackList = new List<Track>();
             
@@ -46,7 +46,7 @@ namespace Spotivy
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
                     Console.WriteLine("OPTIONS:");
                     Console.WriteLine("1: View song list");
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    //Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("2: View your playlists");
                     Console.WriteLine("3: View your friends");
                     Console.WriteLine("4: View your Liked songs");
@@ -73,6 +73,27 @@ namespace Spotivy
                     } else if (ans != null && ans == "1")
                     {
                         Console.WriteLine("song list");
+                    } else if (ans != null && ans == "2")
+                    {
+                        Console.WriteLine("playlists");
+                    } else if (ans != null && ans == "3")
+                    {
+                        Console.WriteLine("friends");
+                    } else if (ans != null && ans == "4")
+                    {
+                        Console.WriteLine("liked songs");
+                    } else if (ans != null && ans == "5")
+                    {
+                        Console.WriteLine("play song");
+                    } else if (ans != null && ans == "6")
+                    {
+                        Console.WriteLine("pause song");
+                    } else if (ans != null && ans == "7")
+                    {
+                        Console.WriteLine("skip song");
+                    } else if (ans != null && ans == "8")
+                    {
+                        Console.WriteLine("like song");
                     }
 
                     //ending loop and waiting for re-trigger
