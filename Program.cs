@@ -6,7 +6,7 @@ namespace Spotivy
     {
         static void Main(string[] args)
         {
-            //create account
+            // Create account
             Console.BackgroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("Welcome to Spotivy!");
             Console.WriteLine(" ");
@@ -16,9 +16,11 @@ namespace Spotivy
 
             User user = new User();
             SongList songList = new SongList();
+<<<<<<< HEAD
+=======
+            List<Song> likedSongs = new List<Song>();
+>>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
 
-
-            //user aanmaken
             var answer = Console.ReadLine();
             if (answer != null && answer == "1")
             {
@@ -37,8 +39,12 @@ namespace Spotivy
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
                     Console.WriteLine("OPTIONS:");
                     Console.WriteLine("1: View song list");
+<<<<<<< HEAD
                     //Console.BackgroundColor = ConsoleColor.Red;
                     Console.WriteLine("2: View your playlists");
+=======
+                    Console.WriteLine("2: Create a playlist");
+>>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     Console.WriteLine("3: View your friends");
                     Console.WriteLine("4: View your Liked songs");
                     Console.WriteLine(" ");
@@ -49,8 +55,8 @@ namespace Spotivy
                     Console.WriteLine("8: Like a song");
                     Console.WriteLine(" ");
                     Console.WriteLine("PLAYLIST:");
-                    Console.WriteLine("9: ???");
-                    Console.WriteLine("10: ???");
+                    Console.WriteLine("9: Add a song to a playlist");
+                    Console.WriteLine("10: Play a playlist");
                     Console.WriteLine(" ");
                     Console.BackgroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("type '0' to leave");
@@ -58,23 +64,35 @@ namespace Spotivy
 
                     var ans = Console.ReadLine();
 
-                    if (ans != null && ans == "0") {
+                    if (ans != null && ans == "0")
+                    {
                         Console.WriteLine("Exited!");
                         break;
-                    } else if (ans != null && ans == "1")
+                    }
+                    else if (ans != null && ans == "1")
                     {
                         songList.DisplayAllSongs();
                         optionsLoop();
+<<<<<<< HEAD
                     } else if (ans != null && ans == "2")
                     {
                         Console.WriteLine("playlists");
                         optionsLoop();
 
+=======
+                    }
+                    else if (ans != null && ans == "2")
+                    {
+                        Playlist playlist = new Playlist();
+                        playlist.AddToPlaylist(songList);
+                        optionsLoop();
+>>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     }
                     else if (ans != null && ans == "3")
                     {
                         Console.WriteLine("friends");
                         optionsLoop();
+<<<<<<< HEAD
 
                     }
                     else if (ans != null && ans == "4")
@@ -82,11 +100,23 @@ namespace Spotivy
                         Console.WriteLine("liked songs");
                         optionsLoop();
 
+=======
+                    }
+                    else if (ans != null && ans == "4")
+                    {
+                        Console.WriteLine("Liked songs:");
+                        foreach (var song in likedSongs)
+                        {
+                            Console.WriteLine(song);
+                        }
+                        optionsLoop();
+>>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     }
                     else if (ans != null && ans == "5")
                     {
                         Song.PlaySong(songList);
                         optionsLoop();
+<<<<<<< HEAD
                     } else if (ans != null && ans == "6")
                     {
                         Console.WriteLine("pause song");
@@ -104,13 +134,83 @@ namespace Spotivy
                         Console.WriteLine("like song");
                         optionsLoop();
 
+=======
+                    }
+                    else if (ans != null && ans == "6")
+                    {
+                        Console.WriteLine("Paused song");
+                        optionsLoop();
+                    }
+                    else if (ans != null && ans == "7")
+                    {
+                        Console.WriteLine("Skipped song");
+                        optionsLoop();
+                    }
+                    else if (ans != null && ans == "8")
+                    {
+                        Console.WriteLine("Enter the ID of the song you want to like:");
+                        if (int.TryParse(Console.ReadLine(), out int songId))
+                        {
+                            Song selectedSong = songList.GetSongById(songId);
+                            if (selectedSong != null)
+                            {
+                                likedSongs.Add(selectedSong);
+                                Console.WriteLine($"Liked {selectedSong.Title} by {selectedSong.Artist}.");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Song not found.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid ID.");
+                        }
+                        optionsLoop();
+                    }
+                    else if (ans != null && ans == "9")
+                    {
+                        Console.WriteLine("Enter the name of the playlist you want to add a song to:");
+                        string playlistName = Console.ReadLine();
+                        Playlist playlist = Playlist.GetPlaylistByName(playlistName);
+                        if (playlist != null)
+                        {
+                            Console.WriteLine("Enter the ID of the song you want to add:");
+                            if (int.TryParse(Console.ReadLine(), out int songId))
+                            {
+                                Song selectedSong = songList.GetSongById(songId);
+                                if (selectedSong != null)
+                                {
+                                    playlist.AddSong(selectedSong);
+                                    Console.WriteLine($"Added {selectedSong.Title} to playlist {playlistName}.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Song not found.");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Invalid ID.");
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Playlist not found.");
+                        }
+                        optionsLoop();
+                    }
+                    else if (ans != null && ans == "10")
+                    {
+                        Playlist.PlayPlaylist();
+                        optionsLoop();
+>>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     }
 
-                    //ending loop and waiting for re-trigger
+                    
                     break;
                 }
             }
-
         }
     }
 }
