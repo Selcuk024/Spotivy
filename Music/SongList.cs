@@ -21,22 +21,20 @@ namespace Spotivy.Music
             // Hardcoded list of songs
             songs.Add(new Song(1, "Bohemian Rhapsody", "Rock", "Queen", "A Night at the Opera", 354));
             songs.Add(new Song(2, "Hotel California", "Rock", "Eagles", "Hotel California", 391));
-            songs.Add(new Song(3, "Stairway to Heaven", "Rock", "Led Zeppelin", "Led Zeppelin IV", 482));
-            songs.Add(new Song(4, "Imagine", "Rock", "John Lennon", "Imagine", 187));
-            songs.Add(new Song(5, "Hey Jude", "Rock", "The Beatles", "Hey Jude", 238));
-            songs.Add(new Song(6, "Like a Rolling Stone", "Rock", "Bob Dylan", "Highway 61 Revisited", 369));
-            songs.Add(new Song(7, "Let It Be", "Rock", "The Beatles", "Let It Be", 243));
-            songs.Add(new Song(8, "Smells Like Teen Spirit", "Grunge", "Nirvana", "Nevermind", 301));
-            songs.Add(new Song(9, "Billie Jean", "Pop", "Michael Jackson", "Thriller", 293));
-            songs.Add(new Song(10, "Yesterday", "Pop", "The Beatles", "Help!", 125));
-            songs.Add(new Song(11, "Born to Run", "Rock", "Bruce Springsteen", "Born to Run", 269));
-            songs.Add(new Song(12, "Hallelujah", "Rock", "Jeff Buckley", "Grace", 217));
-            songs.Add(new Song(13, "Sweet Child o' Mine", "Hard Rock", "Guns N' Roses", "Appetite for Destruction", 356));
-            songs.Add(new Song(14, "Rolling in the Deep", "Pop", "Adele", "21", 228));
-            songs.Add(new Song(15, "Purple Rain", "Rock", "Prince", "Purple Rain", 520));
-            songs.Add(new Song(16, "Het is een nacht", "Nederpop", "Guus Meeuwis", "Verbazing", 225));
-            songs.Add(new Song(17, "Hey Brother", "Country", "Avicii", "True", 255));
-            songs.Add(new Song(18, "Zij gelooft in mij", "Nederpop", "Andre Hazes", "De Hazes 100", 229));
+            songs.Add(new Song(3, "Bohemian Like You", "Alternative Rock", "The Dandy Warhols", "Thirteen Tales from Urban Bohemia", 235));
+            songs.Add(new Song(4, "Africa", "Rock", "Toto", "Toto IV", 295));
+            songs.Add(new Song(5, "Zoutelande", "Pop", "BLØF", "Aan", 220));
+            songs.Add(new Song(6, "Viva La Vida", "Alternative Rock", "Coldplay", "Viva la Vida or Death and All His Friends", 242));
+            songs.Add(new Song(7, "Mag Het Licht Uit", "Rock", "De Dijk", "Wakker in een Vreemde Wereld", 295));
+            songs.Add(new Song(8, "Wonderwall", "Britpop", "Oasis", "(What's the Story) Morning Glory?", 259));
+            songs.Add(new Song(9, "Ik Heb Je Lief", "Pop", "Paul de Leeuw", "Mijn Houten Hart", 196));
+            songs.Add(new Song(10, "Fix You", "Alternative Rock", "Coldplay", "X&Y", 294));
+            songs.Add(new Song(11, "Paradise by the Dashboard Light", "Rock", "Meat Loaf", "Bat Out of Hell", 512));
+            songs.Add(new Song(12, "Iedereen Is Van De Wereld", "Rock", "The Scene", "Blauw", 268));
+            songs.Add(new Song(13, "Shape of You", "Pop", "Ed Sheeran", "÷ (Divide)", 233));
+            songs.Add(new Song(14, "Huilend Naar De Club", "Pop", "Suzan & Freek", "Huilend Naar De Club", 190));
+            songs.Add(new Song(15, "Enter Sandman", "Metal", "Metallica", "Metallica", 331));
+            songs.Add(new Song(16, "Het Is Een Nacht", "Pop", "Guus Meeuwis", "Verbazing", 270));
         }
 
         public void DisplayAllSongs()
