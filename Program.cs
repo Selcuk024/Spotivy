@@ -14,17 +14,8 @@ namespace Spotivy
             Console.WriteLine("1: Create account");
             Console.BackgroundColor = ConsoleColor.Black;
 
-            //track test
-            Track track = new Track(1, "test", "test");
-            List<Track> trackList = new List<Track>();
-            
-            bool playing = track.PlaySong();
-            string songName = track.getTrackName();
-            //if (playing == true)
-            //{
-            //    Console.WriteLine("song is playing");
-            //}
             User user = new User();
+            SongList songList = new SongList();
 
 
             //user aanmaken
@@ -72,7 +63,7 @@ namespace Spotivy
                         break;
                     } else if (ans != null && ans == "1")
                     {
-                        Console.WriteLine("song list");
+                        songList.DisplayAllSongs();
                     } else if (ans != null && ans == "2")
                     {
                         Console.WriteLine("playlists");
