@@ -40,8 +40,8 @@ namespace Spotivy
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
                     Console.WriteLine("OPTIONS:");
                     Console.WriteLine("1: View song list");
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("2: View your playlists");
+                    //Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("2: create a playlist");
                     Console.WriteLine("3: View your friends");
                     Console.WriteLine("4: View your Liked songs");
                     Console.WriteLine(" ");
