@@ -85,11 +85,9 @@ namespace Spotivy
                     }
                     else if (ans != null && ans == "5")
                     {
-                        Console.WriteLine("play song");
+                        Song.PlaySong(songList);
                         optionsLoop();
-
-                    }
-                    else if (ans != null && ans == "6")
+                    } else if (ans != null && ans == "6")
                     {
                         Console.WriteLine("pause song");
                         optionsLoop();
