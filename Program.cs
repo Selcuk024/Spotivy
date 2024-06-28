@@ -64,6 +64,7 @@ namespace Spotivy
                     } else if (ans != null && ans == "1")
                     {
                         songList.DisplayAllSongs();
+                        optionsLoop();
                     } else if (ans != null && ans == "2")
                     {
                         Console.WriteLine("playlists");
@@ -75,7 +76,8 @@ namespace Spotivy
                         Console.WriteLine("liked songs");
                     } else if (ans != null && ans == "5")
                     {
-                        Console.WriteLine("play song");
+                        Song.PlaySong(songList);
+                        optionsLoop();
                     } else if (ans != null && ans == "6")
                     {
                         Console.WriteLine("pause song");
