@@ -67,19 +67,19 @@ namespace Spotivy
                     {
                         songList.DisplayAllSongs();
                         optionsLoop();
-=
+
                     }
                     else if (ans != null && ans == "2")
                     {
                         Playlist playlist = new Playlist();
                         playlist.AddToPlaylist(songList);
                         optionsLoop();
-=                    }
+                   }
                     else if (ans != null && ans == "3")
                     {
                         Console.WriteLine("friends");
                         optionsLoop();
-=
+
                     }
                     else if (ans != null && ans == "4")
                     {
