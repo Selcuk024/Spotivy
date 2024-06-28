@@ -16,10 +16,8 @@ namespace Spotivy
 
             User user = new User();
             SongList songList = new SongList();
-<<<<<<< HEAD
-=======
+
             List<Song> likedSongs = new List<Song>();
->>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
 
             var answer = Console.ReadLine();
             if (answer != null && answer == "1")
@@ -39,12 +37,8 @@ namespace Spotivy
                     Console.BackgroundColor = ConsoleColor.DarkBlue;
                     Console.WriteLine("OPTIONS:");
                     Console.WriteLine("1: View song list");
-<<<<<<< HEAD
-                    //Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("2: View your playlists");
-=======
+
                     Console.WriteLine("2: Create a playlist");
->>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     Console.WriteLine("3: View your friends");
                     Console.WriteLine("4: View your Liked songs");
                     Console.WriteLine(" ");
@@ -73,34 +67,19 @@ namespace Spotivy
                     {
                         songList.DisplayAllSongs();
                         optionsLoop();
-<<<<<<< HEAD
-                    } else if (ans != null && ans == "2")
-                    {
-                        Console.WriteLine("playlists");
-                        optionsLoop();
-
-=======
+=
                     }
                     else if (ans != null && ans == "2")
                     {
                         Playlist playlist = new Playlist();
                         playlist.AddToPlaylist(songList);
                         optionsLoop();
->>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
-                    }
+=                    }
                     else if (ans != null && ans == "3")
                     {
                         Console.WriteLine("friends");
                         optionsLoop();
-<<<<<<< HEAD
-
-                    }
-                    else if (ans != null && ans == "4")
-                    {
-                        Console.WriteLine("liked songs");
-                        optionsLoop();
-
-=======
+=
                     }
                     else if (ans != null && ans == "4")
                     {
@@ -110,31 +89,12 @@ namespace Spotivy
                             Console.WriteLine(song);
                         }
                         optionsLoop();
->>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     }
                     else if (ans != null && ans == "5")
                     {
                         Song.PlaySong(songList);
                         optionsLoop();
-<<<<<<< HEAD
-                    } else if (ans != null && ans == "6")
-                    {
-                        Console.WriteLine("pause song");
-                        optionsLoop();
 
-                    }
-                    else if (ans != null && ans == "7")
-                    {
-                        Console.WriteLine("skip song");
-                        optionsLoop();
-
-                    }
-                    else if (ans != null && ans == "8")
-                    {
-                        Console.WriteLine("like song");
-                        optionsLoop();
-
-=======
                     }
                     else if (ans != null && ans == "6")
                     {
@@ -204,7 +164,6 @@ namespace Spotivy
                     {
                         Playlist.PlayPlaylist();
                         optionsLoop();
->>>>>>> 0b30178261ebbb79b0d90390ac10bacfcb004e9d
                     }
 
                     

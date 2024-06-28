@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +24,7 @@ namespace Spotivy.Music
             Id = id;
             Genre = genre;
         }
+
         public static void PlaySong(SongList songList)
         {
             Console.WriteLine("\nWhich song do you want to play?");
@@ -45,6 +46,7 @@ namespace Spotivy.Music
                 Console.WriteLine("Invalid ID.");
             }
         }
+
         public override string ToString()
         {
             return $"{Title} - {Artist} ({Album})";
