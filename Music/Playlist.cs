@@ -13,10 +13,10 @@ namespace Spotivy.Music
         //private string name;
         //moet een list van tracks zijn ipv string
 
-       // public void addTrack(string track, List<Track> tracks)
-      //  {
+        public void addTrack(string track, List<Track> tracks)
+        {
             //string moet een track worden
-      //  }
+        }
  
       //  public void play(List<Track> tracks)
       //  {

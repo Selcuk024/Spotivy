@@ -20,10 +20,10 @@ namespace Spotivy
             
             bool playing = track.PlaySong();
             string songName = track.getTrackName();
-            if (playing == true)
-            {
-                Console.WriteLine("song is playing");
-            }
+            //if (playing == true)
+            //{
+            //    Console.WriteLine("song is playing");
+            //}
             User user = new User();
 
 
