@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +15,8 @@ namespace Spotivy.Music
         public int Id { get; set; }
         public string Genre { get; set; }
 
+        private Song currSong;
+
         public Song(int id, string title, string genre, string artist, string album, int songduration)
         {
             Title = title;
@@ -24,7 +26,6 @@ namespace Spotivy.Music
             Id = id;
             Genre = genre;
         }
-
         public static void PlaySong(SongList songList)
         {
             Console.WriteLine("\nWhich song do you want to play?");
@@ -32,6 +33,7 @@ namespace Spotivy.Music
             if (int.TryParse(Console.ReadLine(), out int songId))
             {
                 Song selectedSong = songList.GetSongById(songId);
+                //currSong = selectedSong;
                 if (selectedSong != null)
                 {
                     Console.WriteLine($"{selectedSong.Title} by {selectedSong.Artist} is now playing...");
@@ -45,6 +47,11 @@ namespace Spotivy.Music
             {
                 Console.WriteLine("Invalid ID.");
             }
+        }
+
+        public void pauseSong(SongList songList)
+        {
+
         }
 
         public override string ToString()
