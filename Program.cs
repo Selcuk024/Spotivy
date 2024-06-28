@@ -64,27 +64,48 @@ namespace Spotivy
                     } else if (ans != null && ans == "1")
                     {
                         songList.DisplayAllSongs();
+                        optionsLoop();
                     } else if (ans != null && ans == "2")
                     {
                         Console.WriteLine("playlists");
-                    } else if (ans != null && ans == "3")
+                        optionsLoop();
+
+                    }
+                    else if (ans != null && ans == "3")
                     {
                         Console.WriteLine("friends");
-                    } else if (ans != null && ans == "4")
+                        optionsLoop();
+
+                    }
+                    else if (ans != null && ans == "4")
                     {
                         Console.WriteLine("liked songs");
-                    } else if (ans != null && ans == "5")
+                        optionsLoop();
+
+                    }
+                    else if (ans != null && ans == "5")
                     {
                         Console.WriteLine("play song");
-                    } else if (ans != null && ans == "6")
+                        optionsLoop();
+
+                    }
+                    else if (ans != null && ans == "6")
                     {
                         Console.WriteLine("pause song");
-                    } else if (ans != null && ans == "7")
+                        optionsLoop();
+
+                    }
+                    else if (ans != null && ans == "7")
                     {
                         Console.WriteLine("skip song");
-                    } else if (ans != null && ans == "8")
+                        optionsLoop();
+
+                    }
+                    else if (ans != null && ans == "8")
                     {
                         Console.WriteLine("like song");
+                        optionsLoop();
+
                     }
 
                     //ending loop and waiting for re-trigger
